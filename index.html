@@ -115,6 +115,10 @@
         if (inputPassword === correctPassword) {
           document.querySelector(".password-container").style.display = "none";
           document.getElementById("content").style.display = "block";
+
+          // Memulai pemutaran lagu setelah kata sandi yang benar dimasukkan
+          const audio = document.getElementById("background-music");
+          audio.play(); // Ini akan memutar audio setelah interaksi pengguna
         } else {
           alert("Kata sandi salah!");
         }
